@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.laba_5_sem_2_javafx.editCarsView">
+   <children>
+      <AnchorPane layoutX="-3.0" layoutY="83.0" prefHeight="311.0" prefWidth="468.0" style="-fx-background-color: #FAFAFA;">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="17.0" prefWidth="79.0" text="Manufacture" />
+            <Label layoutX="99.0" layoutY="14.0" prefHeight="17.0" prefWidth="79.0" text="Body type" />
+            <Label layoutX="178.0" layoutY="14.0" prefHeight="17.0" prefWidth="62.0" text="Color" />
+            <Label layoutX="240.0" layoutY="15.0" prefHeight="17.0" prefWidth="79.0" text="Engine" />
+            <Label layoutX="332.0" layoutY="14.0" prefHeight="17.0" prefWidth="31.0" text="Price" />
+            <Label layoutX="391.0" layoutY="15.0" prefHeight="17.0" prefWidth="73.0" text="Year of issue" />
+            <Label fx:id="manufactureLbl" layoutX="17.0" layoutY="54.0" prefHeight="70.0" prefWidth="79.0" />
+            <Label fx:id="bodyTypeLbl" layoutX="102.0" layoutY="54.0" prefHeight="70.0" prefWidth="79.0" />
+            <Label fx:id="colorLbl" layoutX="181.0" layoutY="54.0" prefHeight="70.0" prefWidth="62.0" />
+            <Label fx:id="engineLbl" layoutX="243.0" layoutY="55.0" prefHeight="70.0" prefWidth="86.0" />
+            <Label fx:id="priceLbl" layoutX="335.0" layoutY="54.0" prefHeight="70.0" prefWidth="48.0" />
+            <Label fx:id="yearOfIssueLbl" layoutX="390.0" layoutY="55.0" prefHeight="70.0" prefWidth="73.0" />
+            <ChoiceBox fx:id="manufactureBox" layoutX="14.0" layoutY="196.0" prefHeight="26.0" prefWidth="79.0" />
+            <Line endX="-6.5" endY="168.0" layoutX="102.0" layoutY="66.0" startX="-9.0" startY="-52.0" />
+            <Line endX="-6.5" endY="168.0" layoutX="185.0" layoutY="66.0" startX="-9.0" startY="-52.0" />
+            <Line endX="-6.5" endY="168.0" layoutX="247.0" layoutY="66.0" startX="-9.0" startY="-52.0" />
+            <Line endX="-6.5" endY="168.0" layoutX="338.0" layoutY="66.0" startX="-9.0" startY="-52.0" />
+            <Line endX="-6.5" endY="168.0" layoutX="398.0" layoutY="66.0" startX="-9.0" startY="-52.0" />
+            <ChoiceBox fx:id="bodyTypeBox" layoutX="99.0" layoutY="196.0" prefHeight="26.0" prefWidth="73.0" />
+            <ChoiceBox fx:id="colorBox" layoutX="181.0" layoutY="196.0" prefHeight="26.0" prefWidth="55.0" />
+            <ChoiceBox fx:id="engineTypeBox" layoutX="243.0" layoutY="196.0" prefHeight="26.0" prefWidth="79.0" />
+            <TextField fx:id="yearOfIssueField" layoutX="396.0" layoutY="196.0" prefHeight="26.0" prefWidth="62.0" />
+            <TextField fx:id="priceField" layoutX="335.0" layoutY="196.0" prefHeight="26.0" prefWidth="55.0" />
+            <TextField fx:id="volumeField" layoutX="243.0" layoutY="235.0" prefHeight="26.0" prefWidth="79.0" />
+            <TextField fx:id="powerField" layoutX="243.0" layoutY="277.0" prefHeight="26.0" prefWidth="79.0" />
+            <Label layoutX="243.0" layoutY="222.0" prefHeight="17.0" prefWidth="73.0" text="Volume" />
+            <Label layoutX="243.0" layoutY="261.0" prefHeight="17.0" prefWidth="73.0" text="Power" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="138.0" layoutY="-9.0" prefHeight="105.0" prefWidth="220.0" text="Car" textFill="WHITE">
+         <font>
+            <Font name="Apple Color Emoji" size="55.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonBack" layoutX="14.0" layoutY="40.0" mnemonicParsing="false" onAction="#checkButtonBack" text="&lt;-" />
+      <Button fx:id="editCarButton" layoutX="346.0" layoutY="31.0" mnemonicParsing="false" onAction="#editCarButtonCheck" prefHeight="44.0" prefWidth="105.0" text="Edit!">
+         <font>
+            <Font name="American Typewriter" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
